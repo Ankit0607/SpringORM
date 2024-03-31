@@ -11,7 +11,7 @@ public class student {
 
 	@Id
 	@Column(name = "student_id")
-	private String studentId;
+	private int studentId;
 
 	@Column(name = "student_name")
 	private String studentName;
@@ -19,9 +19,9 @@ public class student {
 	@Column(name = "student_city")
 	private String city;
 
-	public student(String studentId, String studentName, String city) {
+	public student(int i, String studentName, String city) {
 		super();
-		this.studentId = studentId;
+		this.studentId = i;
 		this.studentName = studentName;
 		this.city = city;
 	}
@@ -31,11 +31,11 @@ public class student {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getStudentId() {
+	public int getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(String studentId) {
+	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 
